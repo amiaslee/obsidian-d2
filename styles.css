@@ -1,0 +1,202 @@
+.D2__Loading {
+  font-style: italic;
+}
+
+.Preview__Error--Title {
+  color: #be0b41 !important;
+}
+
+.Preview__Error {
+  display: flex;
+  flex-direction: column;
+  white-space: pre;
+  white-space: pre-wrap;
+}
+
+.Preview__Recompile {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: 24px;
+  padding: 6px;
+  background-color: white !important;
+  color: #2e3346;
+  display: flex;
+  gap: 4px;
+  box-shadow: none !important;
+  border: 1px solid #dee1eb;
+  filter: drop-shadow(1px 1px 4px rgba(31, 36, 58, 0.08));
+}
+
+.Preview__Recompile:hover {
+  filter: drop-shadow(2px 2px 16px rgba(31, 36, 58, 0.12));
+  cursor: pointer;
+}
+
+.Preview__Recompile > .svg-icon {
+  height: 12px !important;
+  width: 12px !important;
+}
+
+.block-language-d2 {
+  position: relative;
+}
+
+.d2-console-error {
+	position: relative;
+	height: 100%;
+	padding: 10px;
+	overflow: auto;
+	background-color: rgba(var(--color-red-rgb), 0.11);
+	font-family: var(--font-text);
+	line-height: var(--line-height-normal);
+}
+
+.d2-console-error-title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: var(--font-text);
+	font-size: 17px;
+	line-height: var(--line-height-normal);
+}
+
+.d2-console-error-title-svg {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: var(--font-text);
+	font-size: 17px;
+	line-height: var(--line-height-normal);
+}
+
+.d2-console-error-title-svg > svg {
+	width: 19px;
+	height: 19px;
+	color: var(--background-primary);
+	fill: rgba(var(--color-red-rgb), 0.85);
+}
+
+.console-error-triangle {
+	font-size: 12px;
+}
+
+.modal-d2 {
+	padding: 0;
+	width: fit-content;
+	height: fit-content;
+	max-width: var(--modal-width);
+	max-height: var(--modal-height);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0);
+	border: unset;
+}
+
+.modal-d2-closeBtn {
+	display: none;
+}
+
+.modal-d2-content {
+	padding: 0;
+	width: fit-content;
+	height: fit-content;
+	max-width: var(--modal-width);
+	max-height: var(--modal-height);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	user-select: text;
+}
+
+.d2-setting-textarea {
+	width: 100%;
+	height: 35vh;
+	resize: none;
+}
+
+.accordion {
+	border-radius: var(--radius-s);
+	width: 100%;
+}
+
+.accordion.active {
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+}
+
+.accordion-header {
+	background-color: var(--background-primary-alt);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.accordion.active .accordion-header {
+	background-color: var(--titlebar-background);
+	border-radius: var(--radius-s);
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.accordion-label {
+	flex-grow: 1;
+	text-align: center;
+	font-family: var(--font-text);
+	line-height: var(--line-height-normal);
+	display: inline-block;
+	overflow-wrap: anywhere;
+	overflow: hidden;
+	white-space: var(--nav-item-white-space);
+	text-overflow: ellipsis;
+}
+
+.accordion-arrow {
+	position: static;
+	padding: var(--size-2-2) var(--size-2-3);
+	left: var(--size-2-2);
+	inset-inline-end: var(--size-2-2);
+}
+
+.accordion .accordion-arrow > svg {
+	height: 20px;
+	width: 22px;
+	left: var(--size-2-2);
+	color: var(--nav-collapse-icon-color);
+	transform: rotate(0deg);
+	transition: transform 100ms ease-in-out;
+	stroke-width: calc(var(--icon-stroke) * 1.25);
+}
+
+.accordion.active .accordion-arrow > svg {
+	height: 20px;
+	width: 22px;
+	color: var(--nav-collapse-icon-color);
+	transform: rotate(calc(var(--direction) * 180deg));
+	transition: transform 100ms ease-in-out;
+	stroke-width: calc(var(--icon-stroke) * 1.25);
+}
+
+.accordion-content {
+	position: relative;
+	overflow: hidden;
+	max-height: 0;
+	height: 100%;
+	transition: max-height 10ms ease-in-out;
+	padding: 0;
+	cursor: default;
+	border-radius: var(--radius-s);
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+@media print {
+  .Preview__Recompile {
+    display: none;
+  }
+}
+
