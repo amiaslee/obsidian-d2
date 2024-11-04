@@ -1,13 +1,13 @@
+> ### This is an upgraded and modified version based on the [D2 Obsidian Plugin](https://github.com/terrastruct/d2-obsidian), which includes additional features such as image lightboxes, exporting to PNG, SVG, and more.
+
+---
+
 <div align="center">
   <img src="./docs/assets/banner.png" alt="D2" />
   <h2>
     D2 Obsidian Plugin
   </h2>
-
-This is an upgraded and modified version based on the [D2 Obsidian Plugin](https://github.com/terrastruct/d2-obsidian), which includes additional features such as image lightboxes, exporting to PNG, SVG, and more.
-
----
-
+  
 D2 is a modern diagram scripting language thats turns text to diagrams. The source code for D2, as well as install instructions and all other information, can be found at
 [https://github.com/terrastruct/d2](https://github.com/terrastruct/d2).
 
