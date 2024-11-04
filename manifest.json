@@ -1,10 +1,9 @@
 {
-  "id": "d2-obsidian",
-  "name": "D2",
-  "version": "1.1.4",
-  "minAppVersion": "0.15.0",
-  "description": "The official D2 plugin for Obsidian. D2 is a modern diagram scripting language that turns text to diagrams.",
-  "author": "Terrastruct",
-  "authorUrl": "https://d2lang.com",
+  "id": "obsidian-d2",
+  "name": "D2 Diagrams",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Create D2 diagrams directly in the Obsidian.",
+  "author": "Amias Lee",
   "isDesktopOnly": true
 }
