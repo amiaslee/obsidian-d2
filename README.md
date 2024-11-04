@@ -4,9 +4,7 @@
     D2 Obsidian Plugin
   </h2>
 
-```
 This is an upgraded and modified version based on the [D2 Obsidian Plugin](https://github.com/terrastruct/d2-obsidian), which includes additional features such as image lightboxes, exporting to PNG, SVG, and more.
-```
 
 ---
 
